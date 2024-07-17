@@ -1,0 +1,500 @@
+.leo- {
+    &header {
+
+        &Top {
+            display: flex;
+            background: $main-orange;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            z-index: 11;
+
+            width: 100%;
+    
+            padding: vw(8px, 320px) vw(16px, 320px) vw(4px, 320px);
+    
+            @media screen and (min-width: 526px) {
+                padding: vw(8px, 744px) vw(16px, 744px) vw(4px, 744px);
+            }
+            @media screen and (min-width: 920px) {
+                background: $white;
+                justify-content: space-between;
+                
+                padding: vw(16px) calc(50% - #{vw(640px)}) vw(8px);
+                gap: vw(8px);
+
+                
+            }
+            @media screen and (min-width: 1440px) {
+                padding: 16px calc(50% - 640px) 8px;
+                gap: 8px;
+            }
+        }
+
+        &TopLinks {
+            display: none;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                gap: vw(32px);
+            }
+            @media screen and (min-width: 1440px) {
+                gap: 32px;
+            }
+        }
+
+        &TopList {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            list-style: none;
+            height: 100%;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                gap: vw(24px);
+            }
+            @media screen and (min-width: 1440px) {
+                gap: 24px;
+            }
+        }
+
+        &TopListItem {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                
+            }
+            @media screen and (min-width: 1440px) {
+                
+            }
+        }
+
+        &TopLink {
+            transition: color 0.3s ease-in-out;
+            line-height: 100%;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+
+            &:hover {
+                color: $main-violet;
+            }
+        }
+        
+        &_phone {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                gap: vw(8px);
+            }
+            @media screen and (min-width: 1440px) {
+                gap: 8px;
+            }
+        }
+        
+        &_phoneIcon {
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                width: vw(24px);
+                height: vw(24px);
+            }
+            @media screen and (min-width: 1440px) {
+                width: 24px;
+                height: 24px;
+            }
+
+            & path {
+                fill: $gray;
+            }
+        }
+        
+        &_phoneLink {
+            line-height: 100%;
+            transition: color 0.3s ease-in-out;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+
+            &:hover {
+                color: $main-violet;
+            }
+        }
+
+        &Bottom {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            background: $main-orange;
+            position: sticky;
+            top: -0.5px;
+            z-index: 11;
+
+            gap: vw(8px, 320px);
+            border-radius: 0px 0px vw(12px, 320px) vw(12px, 320px);
+            margin-bottom: vw(16px, 320px);
+            padding: vw(8px, 320px) vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                gap: vw(8px, 744px);
+                border-radius: 0px 0px vw(12px, 744px) vw(12px, 744px);
+                margin-bottom: vw(16px, 744px);
+                padding: vw(8px, 744px) vw(16px, 744px);
+            }
+            @media screen and (min-width: 920px) {
+                background: $white;
+                position: relative;
+                top: auto;
+
+                padding: vw(8px) calc(50% - #{vw(640px)}) vw(24px);
+                gap: vw(24px);
+                height: vw(64px);
+                border-radius: 0px;
+                margin-bottom: vw(16px);
+            }
+            @media screen and (min-width: 1440px) {
+                padding: 8px calc(50% - 640px) 24px;
+                gap: 24px;
+                height: 64px;
+                margin-bottom: 16px;
+            }
+
+            &__hideOnMobile {
+                @media screen and (max-width: 920px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &headerShop {
+
+        @media screen and (min-width: 526px) {
+                    
+        }
+        @media screen and (min-width: 920px) {
+            
+        }
+        @media screen and (min-width: 1440px) {
+            
+        }
+
+        @media screen and (max-width: 920px) {
+            width: 100%;
+            
+            .leo-shopSelectButton_placeholder {
+                color: $gray-ultra-light;
+            }
+            
+            .leo-shopSelectButton_value {
+                color: $white;
+            }
+
+            &:hover {
+                background: none;
+            }
+
+            &:active {
+                background: $main-orange-dark;
+            }
+        }
+    }
+
+    &headerLogo {
+        display: none;
+
+        @media screen and (min-width: 526px) {
+                    
+        }
+        @media screen and (min-width: 920px) {
+            display: block;
+        }
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+
+    &headerLogoImg {
+        vertical-align: bottom;
+
+        @media screen and (min-width: 526px) {
+                    
+        }
+        @media screen and (min-width: 920px) {
+            width: vw(212px);
+            height: vw(64px);
+        }
+        @media screen and (min-width: 1440px) {
+            width: 212px;
+            height: 64px;
+        }
+    }
+
+    &headerMenu {
+
+        @media screen and (min-width: 526px) {
+                    
+        }
+        @media screen and (min-width: 920px) {
+            position: absolute;
+            width: vw(160px);
+            padding: 0px;
+            transition: opacity 0.3s ease-in-out;
+        }
+        @media screen and (min-width: 1440px) {
+            width: 160px;
+        }
+
+        &_icon {
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                
+            }
+            @media screen and (min-width: 1440px) {
+                
+            }
+        }
+    }
+
+    &headerMenuWrapper {
+        display: none;
+
+        @media screen and (min-width: 526px) {
+                    
+        }
+        @media screen and (min-width: 920px) {
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            
+            width: vw(160px);
+            height: vw(48px);
+        }
+        @media screen and (min-width: 1440px) {
+            width: 160px;
+            height: 48px;
+        }
+    }
+    
+    &headerSerch {
+        flex: 1;
+
+        @media screen and (min-width: 526px) {
+                    
+        }
+        @media screen and (min-width: 920px) {
+
+        }
+        @media screen and (min-width: 1440px) {
+            
+        }
+
+        &_input {
+            width: 100%;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+
+            }
+            @media screen and (min-width: 1440px) {
+                
+            }
+
+            @media screen and (max-width: 920px) {
+
+                input {
+                    background: $main-orange-dark;
+                    border: none;
+                    color: $white;
+                }
+
+                span {
+                    color: $gray-ultra-light;
+                }
+            }
+        }
+    }
+
+    &headerSerchButton {
+        position: absolute;
+        right: 8px;
+
+        width: vw(24px, 320px);
+        height: vw(24px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(24px, 744px);
+            height: vw(24px, 744px);
+        }
+        @media screen and (min-width: 920px) {
+            width: vw(24px);
+            height: vw(24px);
+        }
+        @media screen and (min-width: 1440px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &headerButton {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s ease-in-out;
+
+        width: vw(40px, 320px);
+        height: vw(40px, 320px);
+        border-radius: vw(8px, 320px);
+        background: $main-orange-dark;
+
+        @media screen and (min-width: 526px) {
+            width: vw(40px, 744px);
+            height: vw(40px, 744px);
+            border-radius: vw(8px, 744px);
+        }
+        @media screen and (min-width: 920px) {
+            display: flex;
+            background: none;
+
+            gap: vw(4px);
+            width: vw(80px);
+            height: vw(48px);
+            border-radius: vw(8px);
+        }
+        @media screen and (min-width: 1440px) {
+            gap: 4px;
+            width: 80px;
+            height: 48px;
+            border-radius: 8px;
+        }
+
+        &:hover {
+            background: $gray-ultra-light;
+        }
+
+        &__mobile {
+            display:  none;
+            
+            @media screen and (max-width: 920px) {
+                display: flex;
+
+                &:hover {
+                    background: $main-orange-dark;
+                }
+
+                &:active {
+                    background: $main-orange;
+                }
+            }
+        }
+        
+        &_icon {
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                width: vw(28px);
+                height: vw(28px);
+                
+                & path {
+                    fill: $main-violet;
+                }
+            }
+            @media screen and (min-width: 1440px) {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        
+        &_text {
+            line-height: 100%;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                font-size: vw(12px);
+            }
+            @media screen and (min-width: 1440px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &headerCart {
+        display: none;
+
+        @media screen and (min-width: 526px) {
+                    
+        }
+        @media screen and (min-width: 920px) {
+            display: flex;
+
+            width: vw(180px);
+            padding: 0px;
+        }
+        @media screen and (min-width: 1440px) {
+            width: 180px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 526px) {
+            
+}
+@media screen and (min-width: 920px) {
+    
+}
+@media screen and (min-width: 1440px) {
+    
+}

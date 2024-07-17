@@ -1,0 +1,292 @@
+.leo-{
+    &catalogPopup {
+        display: none;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            background: $white;
+            position: absolute;
+            flex-direction: row;
+            z-index: 10;
+            transition: opacity 0.3s ease-in-out,
+                        transform 0.3s ease-in-out;
+
+            opacity: 0;
+
+            width: 100%;
+            height: 100%;
+            left: 0px;
+
+            transform: translateY(vw(-64px));
+            top: vw(136px);
+            padding: 0px vw(40px);
+            gap: vw(24px);
+            border-top: vw(1px) solid $gray-light;
+        }
+        
+        @media screen and (min-width: 1440px) {
+            transform: translateY(-64px);
+            top: 136px;
+            gap: 24px;
+            border-top: 1px solid $gray-light;
+            padding: 0px calc(50% - 640px);
+        }
+
+        &__active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        &_aside {
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                display: flex;
+                flex-direction: column;
+                overflow: auto;
+
+                height: 100%;
+
+                min-width: vw(376px);
+                max-width: vw(376px);
+                gap: vw(12px);
+                padding: vw(20px) vw(20px) vw(136px) 0px;
+                border-right: vw(1px) solid $gray-light;
+            }
+            
+            @media screen and (min-width: 1440px) {
+                min-width: 376px;
+                max-width: 376px;
+                gap: 12px;
+                padding: 20px 20px 136px 0px;
+                border-right: 1px solid $gray-light;
+            }
+        }
+
+        &_view {
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                padding-bottom: vw(136px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                padding-bottom: 136px;
+            }
+        }
+
+        &_check {
+            display: none;
+        }
+    }
+
+    &catalogPopup_check:checked + &catalogView {
+        display: flex;
+    }
+
+    &catalogPopupItem {
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+        
+        }
+        
+        @media screen and (min-width: 1440px) {
+        
+        }
+
+        &__active {
+            background: $white;
+            cursor: default;
+            
+            @media screen and (min-width: 920px) {
+                
+
+                &:hover {
+                    background: $white;
+                }
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+        
+        &_icon {
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: vw(24px);
+                height: vw(24px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 24px;
+                height: 24px;
+            }
+
+            & path {
+                transition: fill 0.3s ease-in-out;
+            }
+        }
+
+        &__active &_icon {
+            & path {
+                fill: $main-orange;
+            }
+        }
+        
+        &_text {
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+            
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+    }
+
+    &catalogView {
+        display: none;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            flex-wrap: wrap;
+            overflow: auto;
+            max-height: 100%;
+            
+            padding: vw(20px) vw(80px) vw(20px) vw(24px);
+            gap: vw(20px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            padding: 20px 80px 20px 24px;
+            gap: 20px;
+        }
+    }
+
+    &catalogBlock {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            width: vw(240px);
+            gap: vw(16px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 240px;
+            gap: 16px;
+        }
+
+        &_title {
+            line-height: 100%;
+            font-weight: 500;
+            color: $black;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(20px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 20px;
+            }
+        }
+    
+        &_list {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                gap: vw(12px);
+                padding-left: vw(8px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                gap: 12px;
+                padding-left: 8px;
+            }
+        }
+    }
+
+    &catalogListItem {
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+        
+        }
+        
+        @media screen and (min-width: 1440px) {
+        
+        }
+
+        &_link {
+            line-height: 100%;
+            color: $black;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 526px) {
+
+}
+
+@media screen and (min-width: 920px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}

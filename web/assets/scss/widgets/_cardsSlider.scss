@@ -1,0 +1,176 @@
+.leo-cardsSlider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    gap: vw(18px, 320px);
+    margin-bottom: vw(32px, 320px);
+
+    @media screen and (min-width: 526px) {
+        gap: vw(18px, 744px);
+        margin-bottom: vw(32px, 744px);
+    }
+
+    @media screen and (min-width: 920px) {
+        gap: vw(40px);
+        margin-bottom: vw(64px);
+    }
+
+    @media screen and (min-width: 1440px) {
+        gap: 40px;
+        margin-bottom: 64px;
+    }
+
+    &_head {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 2;
+
+        @media screen and (min-width: 526px) {
+
+        }
+
+        @media screen and (min-width: 920px) {
+            justify-content: space-between;
+            
+            gap: vw(24px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 24px;
+        }
+
+        & + * {
+            position: relative;
+            z-index: 0;
+        }
+    }
+
+    &_title {
+        line-height: 100%;
+        font-weight: 700;
+
+        font-size: vw(20px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(20px, 744px);
+        }
+
+        @media screen and (min-width: 920px) {
+            font-size: vw(40px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 40px;
+        }
+
+        &__small {
+    
+            @media screen and (min-width: 920px) {
+                font-size: vw(32px);
+            }
+    
+            @media screen and (min-width: 1440px) {
+                font-size: 32px;
+            }
+        }
+    }
+
+    &_controls {
+        display: none;
+
+        @media screen and (min-width: 920px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border: solid $gray-light;
+
+            width: vw(64px);
+            height: vw(40px);
+            border-radius: vw(20px);
+            border-width: vw(1px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 64px;
+            height: 40px;
+            border-radius: 20px;
+            border-width: 1px;
+        }
+    }
+
+    &_button {
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        @media screen and (min-width: 526px) {
+
+        }
+
+        @media screen and (min-width: 920px) {
+            width: vw(32px);
+            height: vw(32px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 32px;
+            height: 32px;
+        }
+    
+        &__left {
+            transform: rotate(180deg);
+
+            @media screen and (min-width: 526px) {
+    
+            }
+    
+            @media screen and (min-width: 920px) {
+    
+            }
+    
+            @media screen and (min-width: 1440px) {
+    
+            }
+        }
+    }
+
+    &_icon {
+
+        @media screen and (min-width: 526px) {
+
+        }
+
+        @media screen and (min-width: 920px) {
+            width: vw(24px);
+            height: vw(24px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 24px;
+            height: 24px;
+        }
+
+        & path {
+            fill: $gray;
+        }
+    }
+}
+
+@media screen and (min-width: 526px) {
+
+}
+
+@media screen and (min-width: 920px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}

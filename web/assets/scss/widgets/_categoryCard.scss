@@ -1,0 +1,201 @@
+.leo-categoriesView {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+    width: calc(100% + #{vw(32px, 320px)});
+    transform: translateX(vw(-16px, 320px));
+    scroll-padding: 0px vw(16px, 320px);
+    padding: 0px vw(16px, 320px);
+    gap: vw(12px, 320px);
+
+    @media screen and (min-width: 526px) {
+        width: calc(100% + #{vw(32px, 744px)});
+        transform: translateX(vw(-16px, 744px));
+        scroll-padding: 0px vw(16px, 744px);
+        padding: 0px vw(16px, 744px);
+        gap: vw(12px, 744px);
+    }
+    
+    @media screen and (min-width: 920px) {
+        width: 100%;
+        transform: none;
+        scroll-padding: unset;
+        padding: unset;
+        gap: vw(24px);
+    }
+    
+    @media screen and (min-width: 1440px) {
+        gap: 24px;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__grid {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        transform: none;
+        scroll-padding: unset;
+        padding: unset;
+
+        gap: vw(8px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(8px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            gap: vw(24px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 24px;
+        }
+    }
+
+    &_card {
+        position: relative;
+        background: $white;
+        border: solid $gray-light;
+        scroll-snap-align: start;
+        overflow: hidden;
+        
+        min-width: (vw(180px, 320px));
+        max-width: (vw(180px, 320px));
+
+        height: vw(80px, 320px);
+        border-radius: vw(16px, 320px);
+        border-width: vw(0.5px, 320px);
+
+        @media screen and (min-width: 526px) {
+            min-width: (vw(180px, 744px));
+            max-width: (vw(180px, 744px));
+
+            height: vw(80px, 744px);
+            border-radius: vw(16px, 744px);
+            border-width: vw(0.5px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            min-width: vw(302px);
+            max-width: vw(302px);
+
+            height: vw(160px);
+            border-radius: vw(24px);
+            border-width: vw(1px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            min-width: 302px;
+            max-width: 302px;
+
+            height: 160px;
+            border-radius: 24px;
+            border-width: 1px;
+        }
+    }
+    
+    &__grid &_card {
+        
+        min-width: (vw(140px, 320px));
+        max-width: (vw(140px, 320px));
+
+        height: vw(120px, 320px);
+
+        @media screen and (min-width: 526px) {
+            min-width: (vw(170px, 744px));
+            max-width: (vw(170px, 744px));
+
+            height: vw(120px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            min-width: vw(302px);
+            max-width: vw(302px);
+        
+            height: vw(160px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            min-width: 302px;
+            max-width: 302px;
+            
+            height: 160px;
+        }
+    }
+    
+    &_img {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
+        object-fit: contain;
+        object-position: right bottom;
+
+        width: vw(90px, 320px);
+        height: vw(80px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(90px, 744px);
+            height: vw(80px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            width: vw(160px);
+            height: vw(140px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 160px;
+            height: 140px;
+        }
+    }
+    
+    &_title {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        line-height: 120%;
+        font-weight: 500;
+        width: 100%;
+        height: 100%;
+
+        font-size: vw(12px, 320px);
+        padding: vw(16px, 320px);
+        padding-right: vw(64px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(12px, 744px);
+            padding: vw(16px, 744px);
+            padding-right: vw(64px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            font-size: vw(20px);
+            padding: vw(24px);
+            padding-right: vw(98px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 20px;
+            padding: 24px;
+            padding-right: 98px;
+        }
+    }
+}
+
+@media screen and (min-width: 526px) {
+
+}
+
+@media screen and (min-width: 920px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}

@@ -1,0 +1,297 @@
+.leo- {
+    
+    &mainPageBanner {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        background: $gray-ultra-light;
+
+        width: vw(288px, 320px);
+        height: vw(400px, 320px);
+        border-radius: vw(16px, 320px);
+        margin-bottom: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(704px, 744px);
+            height: vw(400px, 744px);
+            border-radius: vw(16px, 744px);
+            margin-bottom: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            width: 100%;
+            height: vw(400px);
+            border-radius: vw(24px);
+            margin-bottom: vw(24px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            height: 400px;
+            border-radius: 24px;
+            margin-bottom: 24px;
+        }
+
+        &_progress {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            top: vw(16px, 320px);
+            left: vw(16px, 320px);
+            width: vw(256px, 320px);
+            height: vw(4px, 320px);
+            gap: vw(4px, 320px);
+
+            @media screen and (min-width: 526px) {
+                top: vw(16px, 744px);
+                left: vw(16px, 744px);
+                width: vw(672px, 744px);
+                height: vw(4px, 744px);
+                gap: vw(4px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                top: vw(48px);
+                left: vw(64px);
+                width: vw(500px);
+                height: vw(4px);
+                gap: vw(4px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                top: 48px;
+                left: 64px;
+                width: 500px;
+                height: 4px;
+                gap: 4px;
+            }
+        }
+
+        &_slide {
+            position: relative;
+            display: none;
+
+            padding: vw(60px, 320px) vw(16px, 320px) vw(140px, 320px);
+            min-width: vw(288px, 320px);
+            max-width: vw(288px, 320px);
+            height: vw(400px, 320px);
+
+            @media screen and (min-width: 526px) {
+                padding: vw(60px, 744px) vw(300px, 744px) vw(140px, 744px) vw(16px, 744px);
+                min-width: vw(704px, 744px);
+                max-width: vw(704px, 744px);
+                height: vw(400px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                padding: vw(92px) vw(700px) vw(40px) vw(64px);
+                min-width: 100%;
+                height: vw(400px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                padding: 92px 700px 40px 64px;
+                height: 400px;
+            }
+        }
+
+        &_image {
+            position: absolute;
+            object-fit: cover;
+            object-position: right bottom;
+            z-index: 0;
+
+            left: 0px;
+            top: 0px;
+            width: vw(288px, 320px);
+            height: vw(400px, 320px);
+
+            @media screen and (min-width: 526px) {
+                object-position: center;
+                width: vw(704px, 744px);
+                height: vw(400px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                object-position: left top;
+                width: 100%;
+                height: vw(400px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                height: 400px;
+            }
+
+            &__desktop {
+                display: none;
+                
+                @media screen and (min-width: 526px) {
+                    display: block;
+                }
+                
+                @media screen and (min-width: 1440px) {
+                
+                }
+            }
+
+            &__mobile {
+                display: block;
+
+                @media screen and (min-width: 526px) {
+                    display: none;
+                }
+                
+                @media screen and (min-width: 920px) {
+                    
+                }
+            }
+        }
+
+        &_content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+
+        &_title {
+            line-height: 120%;
+            color: $black;
+            font-weight: 500;
+            cursor: default;
+            
+            font-size: vw(24px, 320px);
+            margin-bottom: vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(24px, 744px);
+                margin-bottom: vw(16px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(48px);
+                margin-bottom: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 48px;
+                margin-bottom: 16px;
+            }
+        }
+        
+        &_text {
+            line-height: 120%;
+            color: $black;
+            cursor: default;
+
+            font-size: vw(12px, 320px);
+            margin-bottom: vw(40px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(12px, 744px);
+                margin-bottom: vw(40px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+                margin-bottom: vw(40px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+        }
+        
+        &_button {
+            min-width: vw(132px, 320px);
+
+            @media screen and (min-width: 526px) {
+                min-width: vw(132px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                min-width: vw(200px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                min-width: 200px;
+            }
+        }
+    }
+
+    &mainPageBannerIndicator {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: $gray;
+        opacity: 0.4;
+        z-index: 1;
+        
+        width: 100%;
+        height: inherit;
+        
+        border-radius: vw(2px, 320px);
+
+        @media screen and (min-width: 526px) {
+            border-radius: vw(2px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            border-radius: vw(2px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            border-radius: 2px;
+        }
+
+        &_progress {
+            width: 100%;
+            max-width: 0%;
+            height: inherit;
+            border-radius: inherit;
+            transition: max-width 0.3s ease-in-out;
+
+            background: $main-violet;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 526px) {
+
+}
+
+@media screen and (min-width: 920px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}

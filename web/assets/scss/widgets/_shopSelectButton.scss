@@ -1,0 +1,105 @@
+.leo- {
+    &shopSelectButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+        
+        border-radius: vw(8px, 320px);
+        height: vw(24px, 320px);
+        gap: vw(2px, 320px);
+        padding-left: vw(8px, 320px);
+        padding-right: vw(8px, 320px);
+
+        @media screen and (min-width: 526px) {
+            border-radius: vw(8px, 744px);
+            height: vw(24px, 744px);
+            gap: vw(2px, 744px);
+            padding-left: vw(8px, 744px);
+            padding-right: vw(8px, 744px);
+        }
+        @media screen and (min-width: 920px) {
+            align-items: flex-start;
+        
+            border-radius: vw(8px);
+            height: vw(48px);
+            gap: vw(4px);
+            padding-left: vw(32px);
+            padding-right: vw(8px);
+        }
+        @media screen and (min-width: 1440px) {
+            border-radius: 8px;
+            height: 48px;
+            gap: 4px;
+            padding-left: 32px;
+            padding-right: 8px;
+        }
+
+        &:hover {
+            background: $gray-ultra-light;
+        }
+        
+        &_icon {
+            display: none;
+
+            @media screen and (min-width: 526px) {
+                        
+            }
+            @media screen and (min-width: 920px) {
+                display: block;
+                position: absolute;
+
+                left: vw(4px);
+                width: vw(24px);
+                height: vw(24px);
+            }
+            @media screen and (min-width: 1440px) {
+                left: 4px;
+                width: 24px;
+                height: 24px;
+            }
+
+            & path {
+                fill: $gray;
+            }
+        }
+        
+        &_placeholder {
+            color: $gray;
+            line-height: 100%;
+
+            font-size: vw(8px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(8px, 744px);
+            }
+            @media screen and (min-width: 920px) {
+                font-size: vw(12px);
+            }
+            @media screen and (min-width: 1440px) {
+                font-size: 12px;
+            }
+        }
+        
+        &_value {
+            line-height: 100%;
+
+            font-size: vw(12px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(12px, 744px);
+            }
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.leo- {
+    &customHeader {
+        position: sticky;
+        background: $main-orange;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        top: -1px;
+        z-index: 5;
+        
+        border-radius: 0px 0px vw(12px, 320px) vw(12px, 320px);
+        gap: vw(8px, 320px);
+        padding: vw(8px, 320px) vw(16px, 320px);
+        transform: translateX(vw(-16px, 320px));
+        width: calc(100% + #{vw(32px, 320px)});
+
+        @media screen and (min-width: 526px) {
+            border-radius: 0px 0px vw(12px, 744px) vw(12px, 744px);
+            gap: vw(8px, 744px);
+            padding: vw(8px, 744px) vw(16px, 744px);
+            transform: translateX(vw(-20px, 744px));
+            width: calc(100% + #{vw(40px, 744px)});
+        }
+        @media screen and (min-width: 920px) {
+            position: static;
+            background: none;
+            border-radius: 0px;
+            padding: 0px;
+            transform: none;
+            width: 100%;
+        }
+        @media screen and (min-width: 1440px) {
+            
+        }
+
+        &_backButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: vw(32px, 320px);
+            height: vw(32px, 320px);
+
+            @media screen and (min-width: 526px) {
+                width: vw(32px, 744px);
+                height: vw(32px, 744px);
+            }
+            @media screen and (min-width: 920px) {
+                display: none;
+            }
+            @media screen and (min-width: 1440px) {
+                
+            }
+        }
+
+        &_backButtonIcon {
+            transform: rotate(180deg);
+
+            width: vw(24px, 320px);
+            height: vw(24px, 320px);
+
+            @media screen and (min-width: 526px) {
+                width: vw(24px, 744px);
+                height: vw(24px, 744px);
+            }
+            @media screen and (min-width: 920px) {
+                display: none;
+            }
+            @media screen and (min-width: 1440px) {
+                
+            }
+        }
+
+        &_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            gap: vw(4px, 320px);
+
+            @media screen and (min-width: 526px) {
+                gap: vw(4px, 744px);
+            }
+            @media screen and (min-width: 920px) {
+                gap: unset;
+                justify-content: flex-start;
+            }
+            @media screen and (min-width: 1440px) {
+                
+            }
+        }
+
+        &_share {
+            @media screen and (max-width: 920px) {
+                min-width: vw(40px, 744px);
+                max-width: vw(40px, 744px);
+                
+                height: vw(40px, 744px);
+
+                padding: 0px;
+                background: $main-orange-dark;
+                border: none;
+
+                & path {
+                    fill: $white;
+                }
+
+                &:hover, &:active {
+                    background: $main-orange-dark;
+                }
+            }
+
+            @media screen and (max-width: 526px) {
+                min-width: vw(40px, 320px);
+                max-width: vw(40px, 320px);
+
+                height: vw(40px, 320px);
+            }
+
+            & span {
+                @media screen and (max-width: 920px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

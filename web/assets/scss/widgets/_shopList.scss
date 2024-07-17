@@ -1,0 +1,923 @@
+.leo- {
+    
+    &shopListModal {
+
+        max-height: 80%;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            width: 100%;
+            height: 100%;
+            max-width: vw(960px);
+            max-height: vw(600px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            max-width: 960px;
+            max-height: 600px;
+        }
+        
+        &_content {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                
+            }
+            
+            @media screen and (min-width: 1440px) {
+
+            }
+        }
+    }
+
+    &shopListHeader {
+        line-height: 100%;
+        font-weight: 500;
+
+        font-size: vw(20px, 320px);
+        margin-bottom: vw(4px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(20px, 744px);
+            margin-bottom: vw(4px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            font-size: vw(20px);
+            padding-left: vw(16px);
+            margin-top: vw(20px);
+            margin-bottom: vw(4px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 20px;
+            padding-left: 16px;
+            margin-top: 20px;
+            margin-bottom: 4px;
+        }
+
+        &__shopModal {
+            @media screen and (min-width: 920px) {
+                margin-top: vw(8px);
+                padding-left: vw(8px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                margin-top: 8px;
+                padding-left: 8px;
+            }
+        }
+    }
+
+    &shopListText {
+        color: $gray;
+        line-height: 100%;
+
+        font-size: vw(12px, 320px);
+        margin-bottom: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(12px, 744px);
+            margin-bottom: vw(12px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            font-size: vw(12px);
+            padding-left: vw(16px);
+            margin-bottom: vw(26px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 12px;
+            padding-left: 16px;
+            margin-bottom: 26px;
+        }
+
+        &__shopModal {
+            @media screen and (min-width: 920px) {
+                padding-left: vw(8px);
+                margin-bottom: vw(12px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                padding-left: 8px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &shopListContent {
+        display: flex;
+        flex-direction: row;
+        border: solid $gray-light;
+        overflow: hidden;
+        height: 100vh;
+
+        border-width: vw(1px, 320px);
+        max-height: calc(100% - #{vw(84px, 320px)});
+        border-radius: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            border-width: vw(1px, 744px);
+            max-height: calc(100% - #{vw(84px, 744px)});
+            border-radius: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            max-height: none;
+            height: 100%;
+            border-radius: vw(24px);
+            border-width: vw(1px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            border-radius: 24px;
+            border-width: 1px;
+        }
+    }
+
+    &shopListCities {
+        display: none;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            display: flex;
+            flex-direction: column;
+
+            border-right: vw(1px) solid $gray-light;
+
+            min-width: vw(292px);
+            max-width: vw(292px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            border-right: 1px solid $gray-light;
+
+            min-width: 292px;
+            max-width: 292px;
+        }
+
+        &_search {
+            @media screen and (min-width: 920px) {
+                width: 100%;
+                padding: vw(16px);
+                border-bottom: vw(1px) solid $gray-light;
+            }
+            
+            @media screen and (min-width: 1440px) {
+                padding: 16px;
+                border-bottom: 1px solid $gray-light;
+            }
+        }
+
+        &_searchInput {
+            @media screen and (min-width: 920px) {
+                width: 100%;
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+
+        &_list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+    }
+
+    &shopListCitiesItem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 0.3s ease-in-out;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            padding: vw(12px) vw(16px);
+            gap: vw(8px);
+            border-bottom: vw(1px) solid $gray-light;
+        }
+        
+        @media screen and (min-width: 1440px) {
+            padding: 12px 16px;
+            gap: 8px;
+            border-bottom: 1px solid $gray-light;
+        }
+
+        &__active {
+            opacity: 1;
+            cursor: default;
+        }
+
+        &_name {
+            line-height: 100%;
+            font-weight: 500;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+        }
+
+        &_count {
+            line-height: 100%;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(12px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 12px;
+            }
+        }
+
+        &_icon {
+            position: absolute;
+            transition: opacity 0.3s ease-in-out;
+            
+            @media screen and (min-width: 920px) {
+                right: 0px;
+                width: vw(20px);
+                height: vw(20px);
+                transform: translateX(vw(-20px));
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 20px;
+                height: 20px;
+                transform: translateX(-20px);
+            }
+
+            & path {
+                fill: $gray;
+            }
+        }
+
+        &__active &_icon {
+            opacity: 0;
+        }
+    }
+
+    &shopListBlock {
+        display: none;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            display: flex;
+            flex-direction: column;
+        
+            min-width: vw(292px);
+            max-width: vw(292px);
+            border-right: vw(1px) solid $gray-light;
+        }
+        
+        @media screen and (min-width: 1440px) {
+            min-width: 292px;
+            max-width: 292px;
+            border-right: 1px solid $gray-light;
+        }
+
+        &_list {
+            display: none;
+
+            @media screen and (min-width: 920px) {
+                
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+
+            &__active {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+
+                @media screen and (min-width: 920px) {
+                    
+                }
+                
+                @media screen and (min-width: 1440px) {
+                
+                }
+            }
+        }
+    }
+
+    &shopListBlockItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        
+        @media screen and (min-width: 920px) {
+            gap: vw(20px);
+            padding: vw(12px) vw(16px);
+            border-bottom: vw(1px) solid $gray-light;
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 20px;
+            padding: 12px 16px;
+            border-bottom: 1px solid $gray-light;
+        }
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+
+            @media screen and (min-width: 920px) {
+                gap: vw(8px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                gap: 8px;
+            }
+        }
+
+        &_textName {
+            font-weight: 500;
+            line-height: 100%;
+
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+        }
+
+        &_textAddress {
+            line-height: 100%;
+
+            @media screen and (min-width: 920px) {
+                font-size: vw(12px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 12px;
+            }
+        }
+
+        &_icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            @media screen and (min-width: 920px) {
+                transform: translateX(vw(-20px));
+            }
+            
+            @media screen and (min-width: 1440px) {
+                transform: translateX(-20px);
+            }
+        }
+
+        &_iconArrow {
+            position: absolute;
+            transition: opacity 0.3s ease-in-out;
+
+            @media screen and (min-width: 920px) {
+                width: vw(20px);
+                height: vw(20px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 20px;
+                height: 20px;
+            }
+
+            & path {
+                fill: $gray;
+            }
+        }
+        
+        &__active {
+            cursor: default;
+        }
+
+        &__active &_iconArrow {
+            opacity: 0;
+        }
+
+        &_iconCheck {
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+
+            @media screen and (min-width: 920px) {
+                width: vw(20px);
+                height: vw(20px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 20px;
+                height: 20px;
+            }
+
+            & path {
+                fill: $main-violet;
+            }
+        }
+
+        &__active &_iconCheck {
+            opacity: 1;
+        }
+    }
+
+    &shopListMap {
+        width: 100%;
+        position: relative;
+
+        @media screen and (min-width: 526px) {
+            max-width: vw(400px);
+            width: vw(400px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            max-width: vw(400px);
+            width: 100%;
+        }
+        
+        @media screen and (min-width: 1440px) {
+            max-width: 400px;
+        }
+
+        &_wrapper {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                height: 100%;
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+
+        &_yamap {
+            width: 100%;
+            height: 100%;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+
+        & .leo-modalWrapper {
+            width: 100dvw;
+            height: 100dvh;
+            transform: translate3d(0px, -20%, 0px);
+
+            @media screen and (min-width: 526px) {
+                transform: translate3d(calc(-50% + #{vw(216.5px, 744px)}), -20%, 0px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: none;
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+
+        & .leo-modalWrapper_background {
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                background: rgba(0, 0, 0, .3);
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+
+        & .leo-shopDataModal {
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                max-width: vw(320px);
+                border-radius: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                max-width: 320px;
+                border-radius: 16px;
+            }
+        }
+
+        & .leo-shopDataModal_content {
+            width: calc(100% + #{vw(24px, 320px)});
+            transform: translateX(vw(-12px, 320px));
+            padding: 0px vw(12px, 320px);
+
+            @media screen and (min-width: 526px) {
+                width: calc(100% + #{vw(24px, 744px)});
+                transform: translateX(vw(-12px, 744px));
+                padding: 0px vw(12px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: calc(100% + #{vw(24px)});
+                transform: translateX(vw(-12px));
+                padding: 0px vw(12px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: calc(100% + 24px);
+                transform: translateX(-12px);
+                padding: 0px 12px;
+            }
+        }
+
+        & .leo-modal_close {
+            
+            @media screen and (min-width: 920px) {
+                width: vw(24px);
+                height: vw(24px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &shopListNearestBtn {
+        position: absolute;
+        z-index: 1;
+
+        transform: translateY(vw(-40px, 320px));
+        width: vw(256px, 320px);
+
+        @media screen and (min-width: 526px) {
+            transform: translateY(vw(-40px, 744px));
+            width: vw(256px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            transform: translateY(vw(-40px));
+            width: vw(256px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            transform: translateY(-40px);
+            width: 256px;
+        }
+    }
+
+    &yamapMarker {
+        cursor: pointer;
+
+        transform: translate3d(vw(-14px, 320px), vw(-37px, 320px), 0px);
+
+        @media screen and (min-width: 526px) {
+            transform: translate3d(vw(-14px, 744px), vw(-37px, 744px), 0px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            transform: translate3d(vw(-14px), vw(-37px), 0px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            transform: translate3d(-14px, -37px, 0px);
+        }
+    }
+
+    &shopListImages {
+        display: flex;
+        flex-direction: row;
+        scroll-snap-type: x mandatory;
+        overflow: auto;
+
+        gap: vw(8px, 320px);
+        padding: 0px vw(16px, 320px) vw(4px, 320px) vw(32px, 320px);
+        scroll-padding: vw(12px, 320px);
+        width: calc(100% + #{vw(32px, 320px)});
+        transform: translateX(vw(-16px, 320px));
+        margin-bottom: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(8px, 744px);
+            padding: 0px vw(16px, 744px) vw(4px, 744px) vw(32px, 744px);
+            scroll-padding: vw(12px, 744px);
+            width: calc(100% + #{vw(32px, 744px)});
+            transform: translateX(vw(-16px, 744px));
+            margin-bottom: vw(12px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            gap: vw(8px);
+            scroll-padding: vw(8px);
+            padding: 0px vw(8px) vw(4px) vw(24px);
+            width: calc(100% + #{vw(16px)});
+            transform: translateX(vw(-8px));
+            margin-bottom: vw(12px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 8px;
+            scroll-padding: 8px;
+            padding: 0px 8px 4px 24px;
+            width: calc(100% + 16px);
+            transform: translateX(-8px);
+            margin-bottom: 12px;
+        }
+
+        &::-webkit-scrollbar {
+            background: transparent;
+        }
+
+        &_map {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            scroll-snap-align: start;
+            border: solid $gray-light;
+            
+            min-width: vw(75px, 320px);
+            max-width: vw(75px, 320px);
+            height: vw(125px, 320px);
+            border-radius: vw(8px, 320px);
+            border-width: vw(0.5px, 320px);
+
+            @media screen and (min-width: 526px) {
+                min-width: vw(75px, 744px);
+                max-width: vw(75px, 744px);
+                height: vw(125px, 744px);
+                border-radius: vw(8px, 744px);
+                border-width: vw(0.5px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                min-width: vw(75px);
+                max-width: vw(75px);
+                height: vw(125px);
+                border-radius: vw(8px);
+                border-width: vw(0.5px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                min-width: 75px;
+                max-width: 75px;
+                height: 125px;
+                border-radius: 8px;
+                border-width: 0.5px;
+            }
+        }
+
+        &_mapImage {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+
+        &_mapMarker {
+            position: absolute;
+            z-index: 5;
+
+            width: vw(28px, 320px);
+            height: vw(37px, 320px);
+
+            @media screen and (min-width: 526px) {
+                width: vw(28px, 744px);
+                height: vw(37px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: vw(28px);
+                height: vw(37px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 28px;
+                height: 37px;
+            }
+        }
+
+        &_image {
+            object-fit: cover;
+            scroll-snap-align: start;
+            border: solid $gray-light;
+
+            min-width: vw(160px, 320px);
+            max-width: vw(160px, 320px);
+            height: vw(125px, 320px);
+            border-radius: vw(8px, 320px);
+            border-width: vw(0.5px, 320px);
+
+            @media screen and (min-width: 526px) {
+                min-width: vw(160px, 744px);
+                max-width: vw(160px, 744px);
+                height: vw(125px, 744px);
+                border-radius: vw(8px, 744px);
+                border-width: vw(0.5px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                min-width: vw(160px);
+                max-width: vw(160px);
+                height: vw(125px);
+                border-radius: vw(8px);
+                border-width: vw(0.5px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                min-width: 160px;
+                max-width: 160px;
+                height: 125px;
+                border-radius: 8px;
+                border-width: 0.5px;
+            }
+        }
+    }
+
+    &shopModalSheduleHeader {
+        font-weight: 500;
+        line-height: 100%;
+
+        font-size: vw(12px, 320px);
+        margin-bottom: vw(8px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(12px, 744px);
+            margin-bottom: vw(8px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            font-size: vw(16px);
+            margin-bottom: vw(8px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &shopModalShedule {
+        display: flex;
+        flex-direction: column;
+
+        gap: vw(4px, 320px);
+        margin-bottom: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(4px, 744px);
+            margin-bottom: vw(12px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            gap: vw(4px);
+            margin-bottom: vw(12px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+
+        &_item {
+            line-height: 100%;
+            
+            font-size: vw(12px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(12px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &shopModalButton {
+        width: 100%;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+        
+        }
+    }
+}
+
+@media screen and (min-width: 526px) {
+
+}
+
+@media screen and (min-width: 920px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}

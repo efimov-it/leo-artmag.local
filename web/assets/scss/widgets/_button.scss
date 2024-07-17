@@ -1,0 +1,137 @@
+.leo-button {
+    background: $main-orange;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    color: $white;
+    font-weight: 500;
+
+    width: max-content;
+    padding: 0px vw(24px, 320px);
+    height: vw(40px, 320px);
+    border-radius: vw(8px, 320px);
+    gap: vw(8px, 320px);
+    font-size: vw(12px, 320px);
+
+    @media screen and (min-width: 526px) {
+        padding: 0px vw(24px, 744px);
+        height: vw(40px, 744px);
+        border-radius: vw(8px, 744px);
+        gap: vw(8px, 744px);
+        font-size: vw(12px, 744px);
+    }
+
+    @media screen and (min-width: 920px) {
+        width: max-content;
+        padding: 0px vw(40px);
+        height: vw(48px);
+        border-radius: vw(8px);
+        gap: vw(8px);
+        font-size: vw(16px);
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 0px 40px;
+        height: 48px;
+        border-radius: 8px;
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    &:hover {
+        background: $main-orange-dark;
+    }
+
+    &:disabled {
+        background: $gray;
+        cursor: not-allowed;
+
+        &:hover {
+            background: $gray;
+        }
+    }
+
+    & svg {
+        width: vw(16px, 320px);
+        height: vw(16px, 320px);
+        
+        @media screen and (min-width: 526px) {
+            width: vw(16px, 744px);
+            height: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            width: vw(28px);
+            height: vw(28px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &__violet {
+        background: $main-violet;
+
+        &:hover {
+            background: $main-violet-dark;
+        }
+    }
+
+    &__gray {
+        background: $gray-ultra-light;
+        color: $gray;
+        border: solid $gray-ultra-light;
+
+        border-width: vw(1px, 320px);
+
+        @media screen and (min-width: 526px) {
+            border-width: vw(1px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            border-width: vw(1px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            border-width: 1px;
+        }
+    
+        &:hover {
+            background: $white;
+        }
+    }
+
+    &__white {
+        background: $white;
+        color: $black;
+        box-shadow: 0px 0px 32px rgba($color: #000000, $alpha: 0.05);
+        border: solid 1px $gray-ultra-light;
+
+        &:hover {
+            background: $white;
+        }
+
+        & svg * {
+            fill: $gray;
+        }
+
+        &:disabled {
+            background: $white;
+            color: $gray;
+
+            &:hover {
+                background: $white;
+            }
+
+            & svg * {
+                fill: $gray;
+            }
+        }
+    }
+}

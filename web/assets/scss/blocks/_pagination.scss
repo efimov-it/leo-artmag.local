@@ -1,0 +1,163 @@
+.leo-pagination {
+    display: flex;
+    flex-direction: column-reverse;
+
+    gap: vw(12px, 320px);
+
+    @media screen and (min-width: 526px) {
+        gap: vw(12px, 744px);
+    }
+
+    @media screen and (min-width: 920px) {
+        flex-direction: row;
+        gap: vw(12px);
+    }
+
+    @media screen and (min-width: 1440px) {
+        gap: 12px;
+    }
+    
+    &_row {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        width: 100vw;
+        transform: translateX(vw(-16px, 320px));
+        padding: 0px vw(16px, 320px);
+        scroll-padding: 0px vw(16px, 320px);
+
+        gap: vw(9px, 320px);
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media screen and (min-width: 526px) {
+            width: 100%;
+            width: fit-content;
+            transform: none;
+            padding: unset;
+            scroll-padding: unset;
+            overflow-x: visible;
+            gap: vw(9px, 744px);
+        }
+
+        @media screen and (min-width: 920px) {
+            gap: vw(12px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 12px;
+        }
+    }
+    
+    &_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: $white;
+        color: $gray;
+        font-weight: 500;
+        border: solid $gray-light;
+        scroll-snap-align: start;
+
+        transition: background 0.3s ease-in-out,
+                    color 0.3s ease-in-out,
+                    border-color 0.3s ease-in-out;
+        
+        min-width: vw(40px, 320px);
+        max-width: vw(40px, 320px);
+        height: vw(40px, 320px);
+        border-radius: vw(8px, 320px);
+        border-width: vw(1px, 320px);
+        font-size: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            min-width: vw(40px, 744px);
+            max-width: vw(40px, 744px);
+            height: vw(40px, 744px);
+            border-radius: vw(8px, 744px);
+            border-width: vw(1px, 744px);
+            font-size: vw(12px, 744px);
+        }
+
+        @media screen and (min-width: 920px) {
+            min-width: vw(48px);
+            max-width: vw(48px);
+            height: vw(48px);
+            border-radius: vw(8px);
+            border-width: vw(1px);
+            font-size: vw(16px);
+
+            &:hover {
+                color: $white;
+                background: $main-violet;
+                border-color: $main-violet;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            min-width: 48px;
+            max-width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            border-width: 1px;
+            font-size: 16px;
+        }
+
+        &:active, &__active {
+            color: $white;
+            background: $main-violet;
+            border-color: $main-violet;
+        }
+
+        &__active {
+            pointer-events: none;
+        }
+
+        &__disabled {
+            padding: 0px;
+            min-width: 0px;
+            max-width: none;
+            border: none;
+            cursor: default;
+
+            &:hover, &:active {
+                background: $white;
+                color: $gray;
+                border-color: $gray-light;
+            }
+        }
+    }
+    
+    &_moreBtn {
+        width: calc(100% - #{vw(32px, 320px)});
+
+        @media screen and (min-width: 526px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 920px) {
+            width: vw(140px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 140px;
+        }
+    }
+}
+
+@media screen and (min-width: 526px) {
+
+}
+
+@media screen and (min-width: 920px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}

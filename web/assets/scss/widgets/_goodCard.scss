@@ -1,0 +1,410 @@
+.leo- {
+    &goodsCardsView {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        transform: translateX(vw(-16px, 320px));
+        width: calc(100% + #{vw(32px, 320px)});
+        padding: 0px vw(16px, 320px);
+        scroll-padding: 0px vw(16px, 320px);
+        gap: vw(8px, 320px);
+
+        @media screen and (min-width: 526px) {
+            transform: translateX(vw(-16px, 744px));
+            width: calc(100% + #{vw(32px, 744px)});
+            padding: 0px vw(16px, 744px);
+            scroll-padding: 0px vw(16px, 744px);
+            gap: vw(8px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            transform: none;
+            width: 100%;
+            padding: unset;
+            scroll-padding: unset;
+
+            gap: vw(20px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 20px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &__grid {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            @media screen and (min-width: 526px) {
+                
+            }
+            
+            @media screen and (min-width: 920px) {
+                
+            }
+            
+            @media screen and (min-width: 1440px) {
+                
+            }
+        }
+    }
+
+    &goodCard {
+        display: flex;
+        flex-direction: column;
+        border: solid $gray-light;
+        scroll-snap-align: start;
+
+        min-width: vw(140px, 320px);
+        max-width: vw(140px, 320px);
+        height: vw(292px, 320px);
+        border-radius: vw(16px, 320px);
+        border-width: vw(0.5px, 320px);
+        padding: vw(8px, 320px);
+        gap: vw(8px, 320px);
+
+        @media screen and (min-width: 526px) {
+            min-width: vw(140px, 744px);
+            max-width: vw(140px, 744px);
+            height: vw(292px, 744px);
+            border-radius: vw(16px, 744px);
+            border-width: vw(0.5px, 744px);
+            padding: vw(8px, 744px);
+            gap: vw(8px, 744px);
+        }
+        
+        @media screen and (min-width: 920px) {
+            min-width: vw(240px);
+            max-width: vw(240px);
+            height: vw(416px);
+            border-radius: vw(24px);
+            border-width: vw(1px);
+            padding: vw(16px);
+            gap: vw(8px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            min-width: 240px;
+            max-width: 240px;
+            height: 416px;
+            border-radius: 24px;
+            border-width: 1px;
+            padding: 16px;
+            gap: 8px;
+        }
+        
+        &_image {
+            object-fit: contain;
+            object-position: center;
+            background-color: $gray-ultra-light;
+
+            width: vw(124px, 320px);
+            height: vw(124px, 320px);
+            border-radius: vw(8px, 320px);
+
+            @media screen and (min-width: 526px) {
+                width: vw(124px, 744px);
+                height: vw(124px, 744px);
+                border-radius: vw(8px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: vw(208px);
+                height: vw(208px);
+                border-radius: vw(8px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 208px;
+                height: 208px;
+                border-radius: 8px;
+            }
+        }
+        
+        &_priceBlock {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+            gap: vw(4px, 320px);
+
+            @media screen and (min-width: 526px) {
+                gap: vw(4px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                gap: vw(4px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                gap: 4px;
+            }
+        }
+        
+        &_curentPrice {
+            line-height: 100%;
+            font-weight: 500;
+
+            font-size: vw(14px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(14px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(20px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 20px;
+            }
+        }
+        
+        &_oldPrice {
+            line-height: 100%;
+            font-weight: 500;
+            color: $gray;
+
+            font-size: vw(10px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(10px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+        }
+        
+        &_discount {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 0px;
+            top: 0px;
+            background: $error;
+            color: $white;
+            font-weight: 500;
+            line-height: 100%;
+            
+            width: vw(36px, 320px);
+            height: vw(20px, 320px);
+            border-radius: vw(4px, 320px);
+            font-size: vw(12px, 320px);
+            transform: rotate(4deg) translateY(calc(-100% - #{vw(8px, 320px)}));
+
+            @media screen and (min-width: 526px) {
+                width: vw(36px, 744px);
+                height: vw(20px, 744px);
+                border-radius: vw(4px, 744px);
+                font-size: vw(12px, 744px);
+                transform: rotate(4deg) translateY(calc(-100% - #{vw(8px, 744px)}));
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: vw(48px);
+                height: vw(24px);
+                border-radius: vw(4px);
+                font-size: vw(16px);
+                transform: rotate(4deg) translateY(calc(-100% - #{vw(8px)}));
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 48px;
+                height: 24px;
+                border-radius: 4px;
+                font-size: 16px;
+                transform: rotate(4deg) translateY(calc(-100% - 8px));
+            }
+        }
+        
+        &_title {
+            display: block;
+            line-height: 120%;
+            
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            line-clamp: 5;
+
+            min-height: vw(70px, 320px);
+            max-height: vw(70px, 320px);
+            font-size: vw(12px, 320px);
+
+            @media screen and (min-width: 526px) {
+                min-height: vw(70px, 744px);
+                max-height: vw(70px, 744px);
+                font-size: vw(12px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                min-height: vw(80px);
+                max-height: vw(80px);
+                font-size: vw(16px);
+                -webkit-line-clamp: 4;
+                line-clamp: 4;
+            }
+            
+            @media screen and (min-width: 1440px) {
+                min-height: 80px;
+                max-height: 80px;
+                font-size: 16px;
+            }
+        }
+        
+        &_buttons {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+            
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+        
+        &_addBtn {
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            padding: 0px;
+            transition: opacity 0.3s ease-in-out;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+            
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+
+            &__hidden {
+                opacity: 0;
+            }
+        }
+
+        &_addBtnIcon {
+            width: vw(16px, 320px);
+            height: vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                width: vw(16px, 744px);
+                height: vw(16px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: vw(28px);
+                height: vw(28px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        
+        &_counter {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                gap: vw(8px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                gap: 8px;
+            }
+        }
+        
+        &_counterButton {
+            padding: 0px;
+            min-width: vw(40px, 320px);
+            max-width: vw(40px, 320px);
+
+            @media screen and (min-width: 526px) {
+                min-width: vw(40px, 744px);
+                max-width: vw(40px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                min-width: vw(48px);
+                max-width: vw(48px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                min-width: 48px;
+                max-width: 48px;
+            }
+        }
+
+        &_counterIcon {
+            width: vw(16px, 320px);
+            height: vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                width: vw(16px, 744px);
+                height: vw(16px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: vw(28px);
+                height: vw(28px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        
+        &_counterInput {
+            width: 100%;
+            
+            & > input {
+                -moz-appearance: textfield !important;
+
+                text-align: center;
+
+                padding: 0px;
+
+                @media screen and (max-width: 920px) {
+                    border: none;
+                }
+
+                &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+                    -webkit-appearance: none !important;
+                }
+            }
+        }
+    }
+}

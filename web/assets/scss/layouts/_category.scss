@@ -1,0 +1,427 @@
+.leo- {
+    &categoryHeader {
+        display: none;
+        
+        @media screen and (min-width: 920px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            gap: vw(24px);
+            margin-bottom: vw(24px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        &__brand {
+            justify-content: flex-start;
+            
+            @media screen and (min-width: 526px) {
+
+            }
+
+            @media screen and (min-width: 920px) {
+
+            }
+            
+            @media screen and (min-width: 1440px) {
+
+            }
+        }
+        
+        &_brandLogo {
+            border: solid $gray-light;
+            object-fit: contain;
+            
+            @media screen and (min-width: 526px) {
+
+            }
+
+            @media screen and (min-width: 920px) {
+                width: vw(120px);
+                height: vw(80px);
+                border-radius: vw(12px);
+                border-width: vw(1px);
+                padding: vw(8px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 120px;
+                height: 80px;
+                border-radius: 12px;
+                border-width: 1px;
+                padding: 8px;
+            }
+        }
+
+        &_title {
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                gap: vw(4px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                gap: 4px;
+            }
+
+            &__brand {
+                margin-right: auto;
+            
+                @media screen and (min-width: 920px) {
+                    margin-top: vw(10px);
+                }
+                
+                @media screen and (min-width: 1440px) {
+                    margin-top: 10px;
+                }
+            }
+        }
+        
+        &_count {
+            color: $gray;
+            line-height: 100%;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+        }
+
+        &_description {
+            white-space: pre-wrap;
+            line-height: 120%;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+                margin-top: vw(12px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+                margin-top: 12px;
+            }
+        }
+        
+        &_share {
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                padding: 0px vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                padding: 0px 16px;
+            }
+        }
+        
+        &_shareIcon {
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: vw(28px);
+                height: vw(28px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                width: 28px;
+                height: 28px;
+            }
+
+            & path {
+                fill: $gray;
+            }
+        }
+    }
+
+    &categoryBrand {
+        
+        @media screen and (min-width: 526px) {
+
+        }
+        
+        @media screen and (min-width: 920px) {
+            display: none;
+        }
+        
+        @media screen and (min-width: 1440px) {
+
+        }
+    
+        &_logo {
+            width: 100%;
+            object-fit: contain;
+            border: solid $gray-light;
+        
+            height: vw(140px, 320px);
+            border-radius: vw(12px, 320px);
+            border-width: vw(1px, 320px);
+            padding: vw(20px, 320px);
+            margin-bottom: vw(12px, 320px);
+
+            @media screen and (min-width: 526px) {
+                height: vw(140px, 744px);
+                border-radius: vw(12px, 744px);
+                border-width: vw(1px, 744px);
+                padding: vw(20px, 744px);
+                margin-bottom: vw(12px, 744px);
+            }
+        }
+        
+        &_name {
+            line-height: 120%;
+            font-weight: 500;
+
+            font-size: vw(20px, 320px);
+            margin-bottom: vw(4px, 320px);
+        
+            @media screen and (min-width: 526px) {
+                font-size: vw(20px, 744px);
+                margin-bottom: vw(4px, 744px);
+            }
+        }
+        
+        &_description {
+            line-height: 120%;
+            white-space: pre-wrap;
+        
+            font-size: vw(16px, 320px);
+            margin-bottom: vw(20px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(16px, 744px);
+                margin-bottom: vw(20px, 744px);
+            }
+        }
+    }
+
+    &categoryLayout {
+        display: flex;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 920px) {
+            flex-direction: row;
+            gap: vw(12px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 12px;
+        }
+        
+        &_aside {
+            display: none;
+
+            flex-direction: column;
+            border: solid $gray-light;
+            height: fit-content;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+                display: flex;
+
+                min-width: vw(272px);
+                max-width: vw(272px);
+                border-radius: vw(16px);
+                border-width: vw(1px);
+                padding: vw(16px);
+                gap: vw(24px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                min-width: 272px;
+                max-width: 272px;
+                border-radius: 16px;
+                border-width: 1px;
+                padding: 16px;
+                gap: 24px;
+            }
+        }
+        
+        &_filter {
+            display: flex;
+            flex-direction: column;
+
+            gap: vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                gap: vw(16px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                gap: vw(12px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                gap: 12px;
+            }
+        }
+        
+        &_filterTitle {
+            line-height: 100%;
+            font-weight: 500;
+
+            font-size: vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(16px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(20px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 20px;
+            }
+        }
+        
+        &_filterList {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            gap: vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                gap: vw(16px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                gap: vw(12px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                gap: 12px;
+            }
+        }
+        
+        &_filterItem {
+            line-height: 100%;
+
+            font-size: vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                font-size: vw(16px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                font-size: vw(16px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                font-size: 16px;
+            }
+        }
+
+        &_resetFilters {
+            width: 100%;
+
+            @media screen and (min-width: 526px) {
+            
+            }
+            
+            @media screen and (min-width: 920px) {
+            
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+        
+        &_grid {
+            display: flex;
+            flex-direction: column;
+
+            gap: vw(16px, 320px);
+
+            @media screen and (min-width: 526px) {
+                gap: vw(16px, 744px);
+            }
+            
+            @media screen and (min-width: 920px) {
+                gap: vw(24px);
+            }
+            
+            @media screen and (min-width: 1440px) {
+                gap: 24px;
+            }
+
+            & > *:first-child {
+
+                @media screen and (min-width: 526px) {
+                
+                }
+                
+                @media screen and (min-width: 920px) {
+                    gap: vw(12px);
+                }
+                
+                @media screen and (min-width: 1440px) {
+                    gap: 12px;
+                }
+            }
+        }
+        
+        &_gridPagination {
+            width: 100%;
+
+            @media screen and (min-width: 526px) {
+                width: fit-content;
+                margin: 0px auto;
+            }
+            
+            @media screen and (min-width: 920px) {
+                width: auto;
+                margin: 0px;
+            }
+            
+            @media screen and (min-width: 1440px) {
+            
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 526px) {
+
+}
+
+@media screen and (min-width: 920px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}
